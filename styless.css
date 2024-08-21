@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(44, 44, 77);
+    text-align: center;
+    color:white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    padding: 20px;
+    border: 3px solid gold;
+    border-radius: 8px;
+    width: 300px;
+    height: 400px;
+    background-color: whitesmoke;
+    color: black;
+    position: relative;
+}
+
+button {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px #B8860B; 
+    transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+    transform: translateX(2px);
+    box-shadow: 0 2px #B8860B;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid black;
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+    padding: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#cancel-btn, #discard-btn {
+    width: 80px;
+}
+
+.confirm-close-dialog-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+.discard-message-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}

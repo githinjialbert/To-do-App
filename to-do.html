@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <main>
+        <button id="new-task">Add New Task</button>
+        <form>
+            <button class="close-button">&times;</button>
+            <label for="task-title">Title</label>
+            <input type="text" id="task-title">
+            <label for="task-date">Date</label>
+            <input type="date" id="task-date">
+            <label for="task-desc">Description</label>
+            <textarea id="task-desc" cols="50" rows="5"></textarea>
+            <button id="add-task" type="submit">Add Task</button>
+        </form>
+        <dialog id="confirm-close-dialog">
+            <div id="confirm-close-dialog-btn-container">
+                <form method="dialog">
+                    <p>Discard unsaved changes?</p>
+                    <button id="cancel-btn">Cancel</button>
+                    <button id="discard-btn">Discard</button>
+                </form>
+            </div>
+        </dialog>
+        <div id="tasks-container">
+        </div>
+    </main>
+<script src="./JS/todo.js"></script>
+</body>
+</html>

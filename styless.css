@@ -8,7 +8,6 @@
     --text-color: white;
     --form-bg: whitesmoke;
   }
-  
   *,
   *::before,
   *::after {
@@ -16,7 +15,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
   body {
     background-color: var(--dark-grey);
     color: var(--text-color);
@@ -27,20 +25,17 @@
     height: 100vh;
     margin: 0;
   }
-  
   h1 {
     color: var(--light-grey);
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
   .todo-app {
     background-color: var(--white);
     width: 300px;
@@ -53,7 +48,6 @@
     flex-direction: column;
     gap: 10px;
   }
-  
   .btn {
     cursor: pointer;
     width: 100px;
@@ -68,21 +62,17 @@
     box-shadow: 0 4px #b8860b;
     transition: transform 0.1s ease-in-out;
   }
-  
   .btn:hover {
     background-image: linear-gradient(#ffcc4c, #f89808);
   }
-  
   .btn:active {
     transform: translateY(2px);
     box-shadow: 0 2px #b8860b;
   }
-  
   .large-btn {
     width: 80%;
     font-size: 1.2rem;
   }
-  
   .close-task-form-btn {
     background: none;
     border: none;
@@ -93,7 +83,6 @@
     top: 10px;
     right: 10px;
   }
-  
   .task-form {
     display: flex;
     flex-direction: column;
@@ -110,25 +99,21 @@
     height: auto;
     overflow: auto;
   }
-  
   .task-form-header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
-  
   .task-form-body {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
   .task-form-footer {
     display: flex;
     justify-content: center;
   }
-  
   .task-form-label,
   #task-title,
   #task-date,
@@ -136,14 +121,12 @@
     display: block;
     width: 100%;
   }
-  
   .task-form-label {
     margin-bottom: 5px;
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--dark-grey);
   }
-  
   #task-title,
   #task-date,
   #task-desc {
@@ -151,49 +134,40 @@
     border: 1px solid var(--dark-grey);
     border-radius: 4px;
   }
-  
   dialog {
     padding: 10px;
     margin: 10px auto;
     border-radius: 15px;
     background-color: var(--white);
-  }
-  
+  } 
   .dialog-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
-  
   .hidden {
     display: none;
   }
-  
   #tasks-container {
     height: 100%;
     overflow-y: auto;
   }
-  
   .task {
     margin: 5px 0;
   }
-  
   @media (min-width: 576px) {
     .todo-app,
     .task-form {
       width: 400px;
       height: 450px;
     }
-  
     .task-form-label {
       font-size: 1.5rem;
     }
-  
     #task-title,
     #task-date {
       height: 2rem;
     }
-  
     #task-title,
     #task-date,
     #task-desc {

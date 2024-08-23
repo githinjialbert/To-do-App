@@ -108,6 +108,12 @@ discardBtn.addEventListener("click", () => {
 });
 
 addTaskBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    addOrUpdateTask();
+    if (inputTaskTitle.value === "" || dateInput.value === "" || description.value === "") {
+        e.preventDefault();
+        alert("Please fill in all the fields");
+    }else {
+        addOrUpdateTask();
+    }
+    return;
 });
+

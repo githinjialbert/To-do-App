@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  color: var(--text-color); /* Updated */
+  color: white; /* Updated */
   margin-top: 20px;
   margin-bottom: 40px;
 }
